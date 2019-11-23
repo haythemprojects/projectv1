@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- <p th:text="${msg}">Votre FrameWork </p> -->
+<p th:text="${msg}">Votre Nom et prenom </p>
+<!-- <p th:text="${p}">Votre Prenom </p> -->
+<!-- <ul th:each ="animal: ${animals}">
+<li th:text="${animal}">...</li> 
+
+</ul>-->
+<ul th:each="animal:${animals2}">
+
+<li>
+<p>
+<span th:text="${animal.nom}"></span>
+<span th:text="${animal.age}"></span>
+</p>
+</li>
+</ul>
+</body>
+</html>
